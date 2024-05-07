@@ -8,14 +8,14 @@ namespace Com.Courier.Client
     /// </summary>
     public class RetryConfiguration
     {
-        /// <summary>
-        /// Retry policy
-        /// </summary>
-        public static Policy<IRestResponse> RetryPolicy { get; set; }
+		/// <summary>
+		/// Retry policy
+		/// </summary>
+		public static Policy<RestResponse> RetryPolicy { get; set; }
 
-        /// <summary>
-        /// Async retry policy
-        /// </summary>
-        public static AsyncPolicy<IRestResponse> AsyncRetryPolicy { get; set; }
-    }
+		/// <summary>
+		/// Async retry policy
+		/// </summary>
+		public static AsyncPolicy<RestResponse> AsyncRetryPolicy { get; set; }
+	}
 }
